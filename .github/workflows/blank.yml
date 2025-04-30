@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          curl -sSLO https://github.com/ilya-lesikov/werf/raw/refs/heads/main/nelm
+          curl -sSLO https://github.com/ilya-lesikov/testt2/raw/refs/heads/main/nelm
           chmod +x nelm
           env
           echo -e "\033[31m Hello World"
@@ -45,8 +45,6 @@ jobs:
           metadata:
             name: lesikov-test5
           EOF
-          ../nelm release install -n lesikovtest9 -r lesikovtest9
-          ../nelm release get -n lesikovtest9 -r lesikovtest9
           ../nelm version
           ../nelm version --color-mode on
           ../nelm version --color-mode off
